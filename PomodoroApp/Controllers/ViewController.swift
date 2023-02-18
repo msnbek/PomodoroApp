@@ -12,8 +12,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        print("veyc2")
+        print("mao")
     }
-
+    
 
 }
 
