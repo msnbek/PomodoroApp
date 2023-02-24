@@ -11,6 +11,9 @@
 		7311A06629A961D1003B8153 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311A06529A961D1003B8153 /* HomeController.swift */; };
 		7311A06829A961E3003B8153 /* ToDoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311A06729A961E3003B8153 /* ToDoController.swift */; };
 		7311A06A29A961EF003B8153 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311A06929A961EF003B8153 /* SettingsController.swift */; };
+		7311A06C29A96423003B8153 /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311A06B29A96423003B8153 /* ToDoView.swift */; };
+		7311A06E29A9646B003B8153 /* ToDoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311A06D29A9646B003B8153 /* ToDoCollectionViewCell.swift */; };
+		7311A07029A965F3003B8153 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311A06F29A965F3003B8153 /* ToDoTableViewController.swift */; };
 		ED5D738629A143F5004DB457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5D738529A143F5004DB457 /* AppDelegate.swift */; };
 		ED5D738829A143F5004DB457 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5D738729A143F5004DB457 /* SceneDelegate.swift */; };
 		ED5D738F29A143F6004DB457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED5D738E29A143F6004DB457 /* Assets.xcassets */; };
@@ -23,6 +26,9 @@
 		7311A06529A961D1003B8153 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		7311A06729A961E3003B8153 /* ToDoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoController.swift; sourceTree = "<group>"; };
 		7311A06929A961EF003B8153 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		7311A06B29A96423003B8153 /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToDoView.swift; path = PomodoroApp/Controllers/ToDoView.swift; sourceTree = SOURCE_ROOT; };
+		7311A06D29A9646B003B8153 /* ToDoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToDoCollectionViewCell.swift; path = PomodoroApp/Controllers/ToDoCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		7311A06F29A965F3003B8153 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		ED5D738229A143F5004DB457 /* PomodoroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5D738529A143F5004DB457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED5D738729A143F5004DB457 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 				7311A06529A961D1003B8153 /* HomeController.swift */,
 				7311A06729A961E3003B8153 /* ToDoController.swift */,
 				7311A06929A961EF003B8153 /* SettingsController.swift */,
+				7311A06F29A965F3003B8153 /* ToDoTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -104,6 +111,8 @@
 		EDC3806329A15466008CCA96 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7311A06B29A96423003B8153 /* ToDoView.swift */,
+				7311A06D29A9646B003B8153 /* ToDoCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,11 +205,14 @@
 			files = (
 				ED5D738629A143F5004DB457 /* AppDelegate.swift in Sources */,
 				7311A06429A9612E003B8153 /* TabBarController.swift in Sources */,
+				7311A06C29A96423003B8153 /* ToDoView.swift in Sources */,
 				ED5D738829A143F5004DB457 /* SceneDelegate.swift in Sources */,
 				7311A06A29A961EF003B8153 /* SettingsController.swift in Sources */,
 				EDC3806729A15C96008CCA96 /* OnboardingViewController.swift in Sources */,
 				7311A06629A961D1003B8153 /* HomeController.swift in Sources */,
 				7311A06829A961E3003B8153 /* ToDoController.swift in Sources */,
+				7311A06E29A9646B003B8153 /* ToDoCollectionViewCell.swift in Sources */,
+				7311A07029A965F3003B8153 /* ToDoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
