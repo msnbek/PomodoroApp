@@ -11,14 +11,23 @@
 		7311A06629A961D1003B8153 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311A06529A961D1003B8153 /* HomeController.swift */; };
 		7311A06829A961E3003B8153 /* ToDoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311A06729A961E3003B8153 /* ToDoController.swift */; };
 		7311A06A29A961EF003B8153 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311A06929A961EF003B8153 /* SettingsController.swift */; };
-		7311A06C29A96423003B8153 /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311A06B29A96423003B8153 /* ToDoView.swift */; };
 		7311A06E29A9646B003B8153 /* ToDoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311A06D29A9646B003B8153 /* ToDoCollectionViewCell.swift */; };
 		7311A07029A965F3003B8153 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311A06F29A965F3003B8153 /* ToDoTableViewController.swift */; };
+		ED18B73A29AAA9E80051A18C /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED18B73929AAA9E80051A18C /* ToDoView.swift */; };
 		ED5D738629A143F5004DB457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5D738529A143F5004DB457 /* AppDelegate.swift */; };
 		ED5D738829A143F5004DB457 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5D738729A143F5004DB457 /* SceneDelegate.swift */; };
 		ED5D738F29A143F6004DB457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED5D738E29A143F6004DB457 /* Assets.xcassets */; };
 		ED5D739229A143F6004DB457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5D739029A143F6004DB457 /* LaunchScreen.storyboard */; };
-		EDC3806729A15C96008CCA96 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3806629A15C96008CCA96 /* OnboardingViewController.swift */; };
+		EDC3806729A15C96008CCA96 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3806629A15C96008CCA96 /* OnboardingController.swift */; };
+		EDFA95C929A9728900865037 /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA95C829A9728900865037 /* LottieAnimation.swift */; };
+		EDFA95D029A9767600865037 /* animation5.json in Resources */ = {isa = PBXBuildFile; fileRef = EDFA95CB29A9767600865037 /* animation5.json */; };
+		EDFA95D129A9767600865037 /* animation1.json in Resources */ = {isa = PBXBuildFile; fileRef = EDFA95CC29A9767600865037 /* animation1.json */; };
+		EDFA95D229A9767600865037 /* animation2.json in Resources */ = {isa = PBXBuildFile; fileRef = EDFA95CD29A9767600865037 /* animation2.json */; };
+		EDFA95D329A9767600865037 /* animation3.json in Resources */ = {isa = PBXBuildFile; fileRef = EDFA95CE29A9767600865037 /* animation3.json */; };
+		EDFA95D429A9767600865037 /* animation4.json in Resources */ = {isa = PBXBuildFile; fileRef = EDFA95CF29A9767600865037 /* animation4.json */; };
+		EDFA95D729A9774900865037 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA95D629A9774900865037 /* OnboardingView.swift */; };
+		EDFA95D929A979F600865037 /* OnboardingCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA95D829A979F600865037 /* OnboardingCVCell.swift */; };
+		EDFA95DC29A98F1C00865037 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EDFA95DB29A98F1C00865037 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,16 +35,24 @@
 		7311A06529A961D1003B8153 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		7311A06729A961E3003B8153 /* ToDoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoController.swift; sourceTree = "<group>"; };
 		7311A06929A961EF003B8153 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		7311A06B29A96423003B8153 /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToDoView.swift; path = PomodoroApp/Controllers/ToDoView.swift; sourceTree = SOURCE_ROOT; };
-		7311A06D29A9646B003B8153 /* ToDoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToDoCollectionViewCell.swift; path = PomodoroApp/Controllers/ToDoCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		7311A06D29A9646B003B8153 /* ToDoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToDoCollectionViewCell.swift; path = PomodoroApp/View/Onboarding/Todo/ToDoCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		7311A06F29A965F3003B8153 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		ED18B73929AAA9E80051A18C /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
 		ED5D738229A143F5004DB457 /* PomodoroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5D738529A143F5004DB457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED5D738729A143F5004DB457 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ED5D738E29A143F6004DB457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED5D739129A143F6004DB457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED5D739329A143F6004DB457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDC3806629A15C96008CCA96 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		EDC3806629A15C96008CCA96 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		EDFA95C829A9728900865037 /* LottieAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimation.swift; sourceTree = "<group>"; };
+		EDFA95CB29A9767600865037 /* animation5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation5.json; sourceTree = "<group>"; };
+		EDFA95CC29A9767600865037 /* animation1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation1.json; sourceTree = "<group>"; };
+		EDFA95CD29A9767600865037 /* animation2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation2.json; sourceTree = "<group>"; };
+		EDFA95CE29A9767600865037 /* animation3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation3.json; sourceTree = "<group>"; };
+		EDFA95CF29A9767600865037 /* animation4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation4.json; sourceTree = "<group>"; };
+		EDFA95D629A9774900865037 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		EDFA95D829A979F600865037 /* OnboardingCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +60,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDFA95DC29A98F1C00865037 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED18B73829AAA8F20051A18C /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				7311A06D29A9646B003B8153 /* ToDoCollectionViewCell.swift */,
+				ED18B73929AAA9E80051A18C /* ToDoView.swift */,
+			);
+			name = Todo;
+			path = Onboarding/Todo;
+			sourceTree = "<group>";
+		};
 		ED5D737929A143F5004DB457 = {
 			isa = PBXGroup;
 			children = (
@@ -82,7 +110,7 @@
 		EDC3806029A153C6008CCA96 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EDC3806629A15C96008CCA96 /* OnboardingViewController.swift */,
+				EDC3806629A15C96008CCA96 /* OnboardingController.swift */,
 				7311A06329A9612E003B8153 /* TabBarController.swift */,
 				7311A06529A961D1003B8153 /* HomeController.swift */,
 				7311A06729A961E3003B8153 /* ToDoController.swift */,
@@ -104,6 +132,7 @@
 		EDC3806229A15423008CCA96 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EDFA95C829A9728900865037 /* LottieAnimation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,8 +140,8 @@
 		EDC3806329A15466008CCA96 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7311A06B29A96423003B8153 /* ToDoView.swift */,
-				7311A06D29A9646B003B8153 /* ToDoCollectionViewCell.swift */,
+				ED18B73829AAA8F20051A18C /* Todo */,
+				EDFA95D529A9773800865037 /* Onboarding */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,10 +156,32 @@
 		EDC3806529A154A8008CCA96 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				EDFA95CA29A9762500865037 /* Lotties */,
 				ED5D739029A143F6004DB457 /* LaunchScreen.storyboard */,
 				ED5D738E29A143F6004DB457 /* Assets.xcassets */,
 			);
 			path = Files;
+			sourceTree = "<group>";
+		};
+		EDFA95CA29A9762500865037 /* Lotties */ = {
+			isa = PBXGroup;
+			children = (
+				EDFA95CC29A9767600865037 /* animation1.json */,
+				EDFA95CD29A9767600865037 /* animation2.json */,
+				EDFA95CE29A9767600865037 /* animation3.json */,
+				EDFA95CF29A9767600865037 /* animation4.json */,
+				EDFA95CB29A9767600865037 /* animation5.json */,
+			);
+			path = Lotties;
+			sourceTree = "<group>";
+		};
+		EDFA95D529A9773800865037 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EDFA95D629A9774900865037 /* OnboardingView.swift */,
+				EDFA95D829A979F600865037 /* OnboardingCVCell.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +200,9 @@
 			dependencies = (
 			);
 			name = PomodoroApp;
+			packageProductDependencies = (
+				EDFA95DB29A98F1C00865037 /* Lottie */,
+			);
 			productName = PomodoroApp;
 			productReference = ED5D738229A143F5004DB457 /* PomodoroApp.app */;
 			productType = "com.apple.product-type.application";
@@ -177,6 +231,9 @@
 				Base,
 			);
 			mainGroup = ED5D737929A143F5004DB457;
+			packageReferences = (
+				EDFA95DA29A98F1C00865037 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = ED5D738329A143F5004DB457 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -191,8 +248,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDFA95D129A9767600865037 /* animation1.json in Resources */,
 				ED5D739229A143F6004DB457 /* LaunchScreen.storyboard in Resources */,
+				EDFA95D029A9767600865037 /* animation5.json in Resources */,
 				ED5D738F29A143F6004DB457 /* Assets.xcassets in Resources */,
+				EDFA95D429A9767600865037 /* animation4.json in Resources */,
+				EDFA95D329A9767600865037 /* animation3.json in Resources */,
+				EDFA95D229A9767600865037 /* animation2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,14 +265,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED18B73A29AAA9E80051A18C /* ToDoView.swift in Sources */,
 				ED5D738629A143F5004DB457 /* AppDelegate.swift in Sources */,
 				7311A06429A9612E003B8153 /* TabBarController.swift in Sources */,
-				7311A06C29A96423003B8153 /* ToDoView.swift in Sources */,
+				EDFA95D929A979F600865037 /* OnboardingCVCell.swift in Sources */,
 				ED5D738829A143F5004DB457 /* SceneDelegate.swift in Sources */,
 				7311A06A29A961EF003B8153 /* SettingsController.swift in Sources */,
-				EDC3806729A15C96008CCA96 /* OnboardingViewController.swift in Sources */,
+				EDC3806729A15C96008CCA96 /* OnboardingController.swift in Sources */,
+				EDFA95C929A9728900865037 /* LottieAnimation.swift in Sources */,
 				7311A06629A961D1003B8153 /* HomeController.swift in Sources */,
 				7311A06829A961E3003B8153 /* ToDoController.swift in Sources */,
+				EDFA95D729A9774900865037 /* OnboardingView.swift in Sources */,
 				7311A06E29A9646B003B8153 /* ToDoCollectionViewCell.swift in Sources */,
 				7311A07029A965F3003B8153 /* ToDoTableViewController.swift in Sources */,
 			);
@@ -418,6 +483,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EDFA95DA29A98F1C00865037 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EDFA95DB29A98F1C00865037 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDFA95DA29A98F1C00865037 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED5D737A29A143F5004DB457 /* Project object */;
 }
