@@ -70,8 +70,8 @@
 		ED18B73829AAA8F20051A18C /* Todo */ = {
 			isa = PBXGroup;
 			children = (
-				7311A06D29A9646B003B8153 /* ToDoCollectionViewCell.swift */,
 				ED18B73929AAA9E80051A18C /* ToDoView.swift */,
+				7311A06D29A9646B003B8153 /* ToDoCollectionViewCell.swift */,
 			);
 			name = Todo;
 			path = Onboarding/Todo;

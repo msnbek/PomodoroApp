@@ -29,6 +29,9 @@ class OnboardingViewController: UIViewController {
         onboardingView.collectionView.delegate = self
         onboardingView.collectionView.dataSource = self
         setUpView()
+       
+        print(view.frame.size.width)
+        print(view.frame.size.height)
         
     }
     
@@ -50,34 +53,31 @@ class OnboardingViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             
-            onboardingView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            onboardingView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            onboardingView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
-            onboardingView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+
             
             
-            
-            onboardingView.collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
+            //CollectionView Constraints
+            onboardingView.collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 10),
             onboardingView.collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            onboardingView.collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+            view.trailingAnchor.constraint(equalTo: onboardingView.collectionView.trailingAnchor, constant: 0),
             onboardingView.collectionView.bottomAnchor.constraint(equalTo:onboardingView.pageControl.topAnchor ,constant: -5),
             
-            onboardingView.pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -150),
-            onboardingView.pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            onboardingView.pageControl.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            onboardingView.pageControl.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            //PageControl Constraints
+            onboardingView.pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -(view.frame.size.height / 5.75)),
+            onboardingView.pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
+       
             
+            //NextButton Constraints
             onboardingView.nextButton.topAnchor.constraint(equalTo: onboardingView.pageControl.bottomAnchor, constant: 20),
             onboardingView.nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            onboardingView.nextButton.heightAnchor.constraint(equalToConstant: 50),
+            onboardingView.nextButton.heightAnchor.constraint(equalToConstant: view.frame.size.height * 0.06),
             onboardingView.nextButton.widthAnchor.constraint(equalToConstant: view.frame.size.width * 0.8),
             
-            onboardingView.skipButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 65),
+            //SkipButton Constraints
+            onboardingView.skipButton.topAnchor.constraint(equalTo: view.topAnchor, constant: view.frame.size.height / 13),
             view.trailingAnchor.constraint(equalTo: onboardingView.skipButton.trailingAnchor, constant: 25),
-            onboardingView.skipButton.widthAnchor.constraint(equalToConstant: 50),
-            onboardingView.skipButton.heightAnchor.constraint(equalToConstant: 50)
-            
-            
+            onboardingView.skipButton.widthAnchor.constraint(equalToConstant: view.frame.size.width * 0.11),
+            onboardingView.skipButton.heightAnchor.constraint(equalToConstant: view.frame.size.height * 0.06)
             
         ])
         
@@ -86,16 +86,16 @@ class OnboardingViewController: UIViewController {
     
 }
 
-//MARK: - Actions
+//MARK: - Actions Button
 
 extension OnboardingViewController {
-    
+    //Button Add Target
     private func buttonHandle() {
         
         onboardingView.nextButton.addTarget(self, action: #selector(nextButtonClicked), for: .touchUpInside)
         onboardingView.skipButton.addTarget(self, action: #selector(skipButtonClicked), for: .touchUpInside)
     }
-    
+    //Next Button
     @objc func nextButtonClicked(_ sender : Any) {
         
         if currentPage == OnboardingViewController.animations.count - 1 {
@@ -118,7 +118,7 @@ extension OnboardingViewController {
         self.present(pushVC, animated: true)
         
     }
-    
+    //Skip Button
     @objc func skipButtonClicked() {
         
         let pushVC = UINavigationController(rootViewController: TabBarController())

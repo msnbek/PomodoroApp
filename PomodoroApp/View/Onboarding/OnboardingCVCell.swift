@@ -102,7 +102,7 @@ class OnboardingCVCell: UICollectionViewCell, UITextViewDelegate {
             //MARK: - Title Label Constraint
             
             titleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-            titleLabel.topAnchor.constraint(equalTo:cellView.bottomAnchor, constant: 100),
+            titleLabel.topAnchor.constraint(equalTo:cellView.bottomAnchor, constant: contentView.frame.size.height / 5),
             
             //MARK: - Description TextView Constraint
             
@@ -114,22 +114,17 @@ class OnboardingCVCell: UICollectionViewCell, UITextViewDelegate {
             //MARK: - Divider View Constraint
             
             dividerView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 3),
-            dividerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            dividerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
-            dividerView.widthAnchor.constraint(equalToConstant: contentView.frame.size.width - 20),
-            dividerView.heightAnchor.constraint(equalToConstant: 0.5),
-            
-            
-            
+            dividerView.widthAnchor.constraint(equalToConstant: contentView.frame.size.width - 30),
+            dividerView.heightAnchor.constraint(equalToConstant: 1),
             
         ])
     }
     
     
-    
+    //MARK: - Animation Play Func
     func setupAnimation(_ animations : Animation) {
         animation = LottieAnimationView(name: animations.animationName)
-        animation.frame = CGRect(x: 0, y: 0, width: self.frame.width  , height: self.frame.height * 0.6)
+        animation.frame = CGRect(x: 0, y: 0, width: self.frame.width  , height: self.frame.height * 0.8)
         animation.animationSpeed = 0.7
         animation.loopMode = .loop
         animation.clipsToBounds = true
