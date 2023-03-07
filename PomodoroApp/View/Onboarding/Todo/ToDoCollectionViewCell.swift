@@ -10,6 +10,7 @@ import UIKit
 class ToDoCollectionViewCell: UICollectionViewCell {
     static let cellIdentifier = "ToDoCollectionViewCell"
     
+    //MARK: - Lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -24,6 +25,7 @@ class ToDoCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Properties
     private let textLabel : UILabel = {
         let label = UILabel()
         label.textColor = .label
@@ -40,10 +42,12 @@ class ToDoCollectionViewCell: UICollectionViewCell {
         button.setImage(UIImage(systemName: "trash"), for: UIControl.State.normal)
         button.tintColor = .red
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(deleteTapped), for: UIControl.Event.touchUpInside)
+        button.addTarget(ToDoCollectionViewCell.self, action: #selector(deleteTapped), for: UIControl.Event.touchUpInside)
         
         return button
     }()
+    
+    //MARK: - Helpers
     @objc func deleteTapped(){
         print("delete tapped")
 

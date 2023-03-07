@@ -14,10 +14,19 @@
 		7311A06E29A9646B003B8153 /* ToDoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311A06D29A9646B003B8153 /* ToDoCollectionViewCell.swift */; };
 		7311A07029A965F3003B8153 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311A06F29A965F3003B8153 /* ToDoTableViewController.swift */; };
 		ED18B73A29AAA9E80051A18C /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED18B73929AAA9E80051A18C /* ToDoView.swift */; };
+		ED5C9E0A29B666100007FF6D /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C9E0929B666100007FF6D /* TimerView.swift */; };
+		ED5C9E0D29B667B60007FF6D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C9E0C29B667B60007FF6D /* UIColorExtension.swift */; };
+		ED5C9E0F29B667CB0007FF6D /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C9E0E29B667CB0007FF6D /* IntExtension.swift */; };
+		ED5C9E1129B669D80007FF6D /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C9E1029B669D80007FF6D /* TimerController.swift */; };
 		ED5D738629A143F5004DB457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5D738529A143F5004DB457 /* AppDelegate.swift */; };
 		ED5D738829A143F5004DB457 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5D738729A143F5004DB457 /* SceneDelegate.swift */; };
 		ED5D738F29A143F6004DB457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED5D738E29A143F6004DB457 /* Assets.xcassets */; };
 		ED5D739229A143F6004DB457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5D739029A143F6004DB457 /* LaunchScreen.storyboard */; };
+		ED959F4529B787C200352144 /* TimerSVExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED959F4429B787C200352144 /* TimerSVExtension.swift */; };
+		ED959F4729B7B5FC00352144 /* Song 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED959F4629B7B5FC00352144 /* Song 1.mp3 */; };
+		ED959F4929B7B60400352144 /* Song 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED959F4829B7B60400352144 /* Song 2.mp3 */; };
+		ED959F4B29B7B60A00352144 /* Song 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED959F4A29B7B60A00352144 /* Song 3.mp3 */; };
+		ED959F4F29B7CBBC00352144 /* OnboardingSVExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED959F4E29B7CBBC00352144 /* OnboardingSVExtension.swift */; };
 		EDC3806729A15C96008CCA96 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3806629A15C96008CCA96 /* OnboardingController.swift */; };
 		EDFA95C929A9728900865037 /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA95C829A9728900865037 /* LottieAnimation.swift */; };
 		EDFA95D029A9767600865037 /* animation5.json in Resources */ = {isa = PBXBuildFile; fileRef = EDFA95CB29A9767600865037 /* animation5.json */; };
@@ -38,12 +47,21 @@
 		7311A06D29A9646B003B8153 /* ToDoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToDoCollectionViewCell.swift; path = PomodoroApp/View/Onboarding/Todo/ToDoCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		7311A06F29A965F3003B8153 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		ED18B73929AAA9E80051A18C /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
+		ED5C9E0929B666100007FF6D /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		ED5C9E0C29B667B60007FF6D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		ED5C9E0E29B667CB0007FF6D /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		ED5C9E1029B669D80007FF6D /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 		ED5D738229A143F5004DB457 /* PomodoroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5D738529A143F5004DB457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED5D738729A143F5004DB457 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ED5D738E29A143F6004DB457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED5D739129A143F6004DB457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED5D739329A143F6004DB457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED959F4429B787C200352144 /* TimerSVExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSVExtension.swift; sourceTree = "<group>"; };
+		ED959F4629B7B5FC00352144 /* Song 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Song 1.mp3"; sourceTree = "<group>"; };
+		ED959F4829B7B60400352144 /* Song 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Song 2.mp3"; sourceTree = "<group>"; };
+		ED959F4A29B7B60A00352144 /* Song 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Song 3.mp3"; sourceTree = "<group>"; };
+		ED959F4E29B7CBBC00352144 /* OnboardingSVExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSVExtension.swift; sourceTree = "<group>"; };
 		EDC3806629A15C96008CCA96 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		EDFA95C829A9728900865037 /* LottieAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimation.swift; sourceTree = "<group>"; };
 		EDFA95CB29A9767600865037 /* animation5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation5.json; sourceTree = "<group>"; };
@@ -77,6 +95,34 @@
 			path = Onboarding/Todo;
 			sourceTree = "<group>";
 		};
+		ED5C9E0729B665AD0007FF6D /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				ED5C9E0929B666100007FF6D /* TimerView.swift */,
+				ED959F4429B787C200352144 /* TimerSVExtension.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		ED5C9E0829B665C90007FF6D /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				ED959F4629B7B5FC00352144 /* Song 1.mp3 */,
+				ED959F4829B7B60400352144 /* Song 2.mp3 */,
+				ED959F4A29B7B60A00352144 /* Song 3.mp3 */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		ED5C9E0B29B6678E0007FF6D /* Exten+Ultis */ = {
+			isa = PBXGroup;
+			children = (
+				ED5C9E0C29B667B60007FF6D /* UIColorExtension.swift */,
+				ED5C9E0E29B667CB0007FF6D /* IntExtension.swift */,
+			);
+			path = "Exten+Ultis";
+			sourceTree = "<group>";
+		};
 		ED5D737929A143F5004DB457 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +142,7 @@
 		ED5D738429A143F5004DB457 /* PomodoroApp */ = {
 			isa = PBXGroup;
 			children = (
+				ED5C9E0B29B6678E0007FF6D /* Exten+Ultis */,
 				EDC3806529A154A8008CCA96 /* Files */,
 				EDC3806429A1546E008CCA96 /* ViewModel */,
 				EDC3806329A15466008CCA96 /* View */,
@@ -114,6 +161,7 @@
 				7311A06329A9612E003B8153 /* TabBarController.swift */,
 				7311A06529A961D1003B8153 /* HomeController.swift */,
 				7311A06729A961E3003B8153 /* ToDoController.swift */,
+				ED5C9E1029B669D80007FF6D /* TimerController.swift */,
 				7311A06929A961EF003B8153 /* SettingsController.swift */,
 				7311A06F29A965F3003B8153 /* ToDoTableViewController.swift */,
 			);
@@ -140,6 +188,7 @@
 		EDC3806329A15466008CCA96 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED5C9E0729B665AD0007FF6D /* Timer */,
 				ED18B73829AAA8F20051A18C /* Todo */,
 				EDFA95D529A9773800865037 /* Onboarding */,
 			);
@@ -156,6 +205,7 @@
 		EDC3806529A154A8008CCA96 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				ED5C9E0829B665C90007FF6D /* Songs */,
 				EDFA95CA29A9762500865037 /* Lotties */,
 				ED5D739029A143F6004DB457 /* LaunchScreen.storyboard */,
 				ED5D738E29A143F6004DB457 /* Assets.xcassets */,
@@ -180,6 +230,7 @@
 			children = (
 				EDFA95D629A9774900865037 /* OnboardingView.swift */,
 				EDFA95D829A979F600865037 /* OnboardingCVCell.swift */,
+				ED959F4E29B7CBBC00352144 /* OnboardingSVExtension.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -248,9 +299,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED959F4729B7B5FC00352144 /* Song 1.mp3 in Resources */,
 				EDFA95D129A9767600865037 /* animation1.json in Resources */,
 				ED5D739229A143F6004DB457 /* LaunchScreen.storyboard in Resources */,
 				EDFA95D029A9767600865037 /* animation5.json in Resources */,
+				ED959F4B29B7B60A00352144 /* Song 3.mp3 in Resources */,
+				ED959F4929B7B60400352144 /* Song 2.mp3 in Resources */,
 				ED5D738F29A143F6004DB457 /* Assets.xcassets in Resources */,
 				EDFA95D429A9767600865037 /* animation4.json in Resources */,
 				EDFA95D329A9767600865037 /* animation3.json in Resources */,
@@ -265,16 +319,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5C9E0A29B666100007FF6D /* TimerView.swift in Sources */,
 				ED18B73A29AAA9E80051A18C /* ToDoView.swift in Sources */,
+				ED959F4529B787C200352144 /* TimerSVExtension.swift in Sources */,
+				ED5C9E0D29B667B60007FF6D /* UIColorExtension.swift in Sources */,
 				ED5D738629A143F5004DB457 /* AppDelegate.swift in Sources */,
 				7311A06429A9612E003B8153 /* TabBarController.swift in Sources */,
+				ED5C9E0F29B667CB0007FF6D /* IntExtension.swift in Sources */,
 				EDFA95D929A979F600865037 /* OnboardingCVCell.swift in Sources */,
 				ED5D738829A143F5004DB457 /* SceneDelegate.swift in Sources */,
+				ED5C9E1129B669D80007FF6D /* TimerController.swift in Sources */,
 				7311A06A29A961EF003B8153 /* SettingsController.swift in Sources */,
 				EDC3806729A15C96008CCA96 /* OnboardingController.swift in Sources */,
 				EDFA95C929A9728900865037 /* LottieAnimation.swift in Sources */,
 				7311A06629A961D1003B8153 /* HomeController.swift in Sources */,
 				7311A06829A961E3003B8153 /* ToDoController.swift in Sources */,
+				ED959F4F29B7CBBC00352144 /* OnboardingSVExtension.swift in Sources */,
 				EDFA95D729A9774900865037 /* OnboardingView.swift in Sources */,
 				7311A06E29A9646B003B8153 /* ToDoCollectionViewCell.swift in Sources */,
 				7311A07029A965F3003B8153 /* ToDoTableViewController.swift in Sources */,

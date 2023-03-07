@@ -7,6 +7,8 @@
 import UIKit
 
 class ToDoView: UIView {
+    
+    //MARK: - Lifecycle
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,7 +24,7 @@ class ToDoView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
+    //MARK: - Properties
      let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical

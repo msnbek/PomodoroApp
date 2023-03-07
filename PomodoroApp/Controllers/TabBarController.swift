@@ -25,25 +25,29 @@ class TabBarController: UITabBarController {
         let homeVC = HomeController()
         let toDoVC  = ToDoController()
         let settingsVC   = SettingsController()
+        let timerVC = TimerController()
         
         
         let nav1 = UINavigationController(rootViewController: homeVC)
         let nav2 = UINavigationController(rootViewController: toDoVC)
-        let nav3 = UINavigationController(rootViewController: settingsVC)
+        let nav3 = UINavigationController(rootViewController: timerVC)
+        let nav4 = UINavigationController(rootViewController: settingsVC)
+       
         
         nav1.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 1)
         nav2.tabBarItem = UITabBarItem(title: "ToDo", image: UIImage(systemName: "list.clipboard"), tag: 2)
-        nav3.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear"), tag: 3)
+        nav3.tabBarItem = UITabBarItem(title: "Timer", image: UIImage(systemName: "timer"), tag: 3)
+        nav4.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear"), tag: 4)
         let font = [NSAttributedString.Key.font:UIFont(name: "AppleSDGothicNeo-SemiBold", size: 16)]
         nav1.tabBarItem.isSpringLoaded = true
         
-        for nav in [nav1,nav2,nav3] {
+        for nav in [nav1,nav2,nav3, nav4] {
             nav.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 5)
             
             nav.tabBarItem.setTitleTextAttributes(font as [NSAttributedString.Key : Any], for: UIControl.State.normal)
         }
         
-        setViewControllers([nav1,nav2,nav3], animated: true)
+        setViewControllers([nav1,nav2,nav3, nav4], animated: true)
         
         
         

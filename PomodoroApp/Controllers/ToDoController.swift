@@ -17,7 +17,8 @@ class ToDoController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = false
+        title = "Tasks"
         setUpView()
         homeView.collectionView.delegate = self
         homeView.collectionView.dataSource = self

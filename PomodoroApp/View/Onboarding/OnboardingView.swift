@@ -9,12 +9,12 @@ import UIKit
 
 class OnboardingView : UIView {
     
-
+    //MARK: - Lifecycle
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .systemBackground
-  
+        
         
     }
     
@@ -23,7 +23,9 @@ class OnboardingView : UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-     let collectionView : UICollectionView = {
+    //MARK: - Properties
+    
+    let collectionView : UICollectionView = {
         
         let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView( frame: .zero, collectionViewLayout: layout)
@@ -42,7 +44,7 @@ class OnboardingView : UIView {
         
     }()
     
-     let pageControl : UIPageControl = {
+    let pageControl : UIPageControl = {
         
         let pageControl = UIPageControl(frame: .zero)
         pageControl.currentPageIndicatorTintColor = .black
@@ -58,7 +60,7 @@ class OnboardingView : UIView {
         
     }()
     
-     let nextButton : UIButton = {
+    let nextButton : UIButton = {
         
         let button = UIButton()
         button.setTitle("Next", for: UIControl.State.normal)
@@ -88,8 +90,8 @@ class OnboardingView : UIView {
         return button
         
     }()
-
-  
-   
+    
+    
+    
     
 }
